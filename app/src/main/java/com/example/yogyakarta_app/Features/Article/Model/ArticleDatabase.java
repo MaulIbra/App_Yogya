@@ -40,7 +40,7 @@ public abstract class ArticleDatabase extends RoomDatabase {
         private ArticleDao articleDao;
 
         public PopulateDbAsyncTask(ArticleDatabase db) {
-            this.articleDao = db.articleDao();
+            articleDao = db.articleDao();
         }
 
         @Override

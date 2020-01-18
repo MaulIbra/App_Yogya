@@ -23,7 +23,7 @@ public class ArticleView extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.article_list_view);
 
         RecyclerView recyclerView = findViewById(R.id.recyclerView_article);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
@@ -37,6 +37,7 @@ public class ArticleView extends AppCompatActivity {
             @Override
             public void onChanged(@Nullable List<Article> articles) {
                 articleAdapter.setArticles(articles);
+                Toast.makeText(ArticleView.this,"on changed",Toast.LENGTH_SHORT).show();
             }
         });
     }
