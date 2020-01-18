@@ -22,13 +22,13 @@ public class NewsViewModel extends AndroidViewModel {
     public NewsViewModel(@NonNull Application application) {
         super(application);
         newsRepository = new NewsRepository();
-        this.newsRepository.getNews("yogyakarta","2019-12-12",currentDate(),"popularity");
+        this.newsResponseLiveData = newsRepository.getNews("yogyakarta","2020-01-17",currentDate(),"popularity");
     }
 
     public String currentDate(){
         DateFormat df = new SimpleDateFormat("yyyy-MM-dd");
         Date dateobj = new Date();
-        return String.valueOf(dateobj);
+        return String.valueOf(df.format(dateobj));
     }
 
 

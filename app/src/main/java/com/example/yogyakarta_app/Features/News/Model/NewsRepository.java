@@ -17,7 +17,7 @@ public class NewsRepository {
 
     private static final String TAG = NewsRepository.class.getSimpleName();
     private static final String BASE_URL = "https://newsapi.org/v2/";
-    private static final String KEY = "2dec48346a404020ae2b5affc5668e2e";
+    private static final String KEY = "b45ce1e14aed45e696631791f757ae8b";
     private ApiRequest apiRequest;
 
     public NewsRepository() {
