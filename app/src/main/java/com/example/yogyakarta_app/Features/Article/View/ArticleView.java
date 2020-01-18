@@ -36,7 +36,6 @@ public class ArticleView extends AppCompatActivity {
             @Override
             public void onChanged(@Nullable List<Article> articles) {
                 articleAdapter.setArticles(articles);
-                Toast.makeText(ArticleView.this,"on changed",Toast.LENGTH_SHORT).show();
             }
         });
     }
