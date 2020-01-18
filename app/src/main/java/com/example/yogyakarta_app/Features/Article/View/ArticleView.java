@@ -6,6 +6,8 @@ import android.arch.lifecycle.ViewModelProviders;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.widget.Toast;
 
 import com.example.yogyakarta_app.Features.Article.Model.Article;
@@ -23,11 +25,18 @@ public class ArticleView extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        RecyclerView recyclerView = findViewById(R.id.recyclerView_article);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        recyclerView.setHasFixedSize(true);
+
+        final ArticleAdapter articleAdapter = new ArticleAdapter();
+        recyclerView.setAdapter(articleAdapter);
+
         articleViewModel = ViewModelProviders.of(this).get(ArticleViewModel.class);
         articleViewModel.getAllArticle().observe(this, new Observer<List<Article>>() {
             @Override
             public void onChanged(@Nullable List<Article> articles) {
-                Toast.makeText(ArticleView.this,"on changed",Toast.LENGTH_SHORT).show();
+                articleAdapter.setArticles(articles);
             }
         });
     }
