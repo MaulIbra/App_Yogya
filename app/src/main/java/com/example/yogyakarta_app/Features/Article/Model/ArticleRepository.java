@@ -27,11 +27,12 @@ public class ArticleRepository {
     }
 
     public void delete(Article article){
+        new deleteArticleAsyncTask(articleDao).execute(article);
 
     }
 
     public void deleteAllArticles(){
-
+        new deleteAllArticleAsyncTask(articleDao).execute();
     }
 
     public LiveData<List<Article>> getAllArticles(){
@@ -64,6 +65,36 @@ public class ArticleRepository {
         @Override
         protected Void doInBackground(Article... articles) {
             articleDao.update(articles[0]);
+            return null;
+        }
+    }
+
+    private static class deleteArticleAsyncTask extends AsyncTask<Article, Void, Void>{
+
+        private ArticleDao articleDao;
+
+        public deleteArticleAsyncTask(ArticleDao articleDao) {
+            this.articleDao = articleDao;
+        }
+
+        @Override
+        protected Void doInBackground(Article... articles) {
+            articleDao.delete(articles[0]);
+            return null;
+        }
+    }
+
+    private static class deleteAllArticleAsyncTask extends AsyncTask<Void, Void, Void>{
+
+        private ArticleDao articleDao;
+
+        public deleteAllArticleAsyncTask(ArticleDao articleDao) {
+            this.articleDao = articleDao;
+        }
+
+        @Override
+        protected Void doInBackground(Void... voids) {
+            articleDao.deleteAllArticles();
             return null;
         }
     }
