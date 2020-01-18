@@ -5,7 +5,7 @@ import android.arch.lifecycle.AndroidViewModel;
 import android.arch.lifecycle.LiveData;
 import android.support.annotation.NonNull;
 
-import com.example.yogyakarta_app.Features.Article.Model.Article;
+import com.example.yogyakarta_app.Data.Db.Entity.Article;
 import com.example.yogyakarta_app.Features.Article.Model.ArticleRepository;
 
 import java.util.List;

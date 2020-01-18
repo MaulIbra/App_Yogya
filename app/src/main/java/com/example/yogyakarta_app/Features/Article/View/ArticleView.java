@@ -1,7 +1,6 @@
 package com.example.yogyakarta_app.Features.Article.View;
 
 import android.arch.lifecycle.Observer;
-import android.arch.lifecycle.ViewModelProvider;
 import android.arch.lifecycle.ViewModelProviders;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -10,7 +9,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.widget.Toast;
 
-import com.example.yogyakarta_app.Features.Article.Model.Article;
+import com.example.yogyakarta_app.Data.Db.Entity.Article;
 import com.example.yogyakarta_app.Features.Article.ViewModel.ArticleViewModel;
 import com.example.yogyakarta_app.R;
 

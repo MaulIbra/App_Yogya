@@ -1,4 +1,4 @@
-package com.example.yogyakarta_app.Features.Article.Model;
+package com.example.yogyakarta_app.Data.Db.Entity;
 
 import android.arch.persistence.room.Entity;
 import android.arch.persistence.room.PrimaryKey;

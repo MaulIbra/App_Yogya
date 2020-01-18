@@ -4,6 +4,9 @@ import android.app.Application;
 import android.arch.lifecycle.LiveData;
 import android.os.AsyncTask;
 
+import com.example.yogyakarta_app.Data.Db.LocalDatabase;
+import com.example.yogyakarta_app.Data.Db.Entity.Article;
+
 import java.util.List;
 
 public class ArticleRepository {
@@ -13,7 +16,7 @@ public class ArticleRepository {
     private LiveData<List<Article>> allArticles;
 
     public ArticleRepository(Application application){
-        ArticleDatabase database =ArticleDatabase.getInstance(application);
+        LocalDatabase database = LocalDatabase.getInstance(application);
         articleDao = database.articleDao();
         allArticles =articleDao.getAllArticles();
     }
