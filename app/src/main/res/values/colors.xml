@@ -6,5 +6,6 @@
     <color name="colorBorder">#EAEAEA</color>
     <color name="background">#c97200</color>
     <color name="textColor">#5D5D5D</color>
+    <color name="white">#ffffff</color>
 
 </resources>

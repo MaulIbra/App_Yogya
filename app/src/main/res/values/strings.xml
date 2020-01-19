@@ -6,4 +6,7 @@
     <string name="home">Home</string>
     <string name="add_info">Add Info</string>
     <string name="account">Account</string>
+    <string name="hotel">Hotel</string>
+    <string name="eat">Eat</string>
+    <string name="news">News</string>
 </resources>
