@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">yogyakarta_app</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home">Home</string>
+    <string name="add_info">Add Info</string>
+    <string name="account">Account</string>
 </resources>
