@@ -10,6 +10,7 @@ import android.view.ViewGroup;
 import android.widget.LinearLayout;
 
 import com.example.yogyakarta_app.Features.News.View.NewsView;
+import com.example.yogyakarta_app.Features.Tour.View.TourView;
 import com.example.yogyakarta_app.R;
 
 public class HomeView extends Fragment implements View.OnClickListener {
@@ -32,7 +33,10 @@ public class HomeView extends Fragment implements View.OnClickListener {
 
         eat = v.findViewById(R.id.image_view_home_eat);
         hotel = v.findViewById(R.id.image_view_home_hotel);
+
         tour = v.findViewById(R.id.image_view_home_tour);
+        tour.setOnClickListener(this);
+
         info = v.findViewById(R.id.image_view_home_info);
         article = v.findViewById(R.id.image_view_home_article);
 
@@ -45,6 +49,9 @@ public class HomeView extends Fragment implements View.OnClickListener {
         switch(b.getId()) {
             case R.id.image_view_home_news:
                 startActivity(new Intent(getActivity(),NewsView.class));
+                break;
+            case R.id.image_view_home_tour:
+                startActivity(new Intent(getActivity(), TourView.class));
                 break;
         }
     }
