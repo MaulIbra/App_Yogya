@@ -9,4 +9,8 @@
     <string name="hotel">Hotel</string>
     <string name="eat">Eat</string>
     <string name="news">News</string>
+    <string name="tour">Tour</string>
+    <string name="info_yogya">Info Yogya</string>
+    <string name="article">Article</string>
+    <string name="infos">Info</string>
 </resources>

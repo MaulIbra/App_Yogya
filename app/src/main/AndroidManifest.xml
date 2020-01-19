@@ -21,6 +21,7 @@
         <activity android:name=".Features.Article.View.ArticleView"></activity>
         <activity android:name=".Features.News.View.NewsView"></activity>
         <activity android:name=".Features.News.View.NewsDetailView"/>
+        <activity android:name=".Features.Tour.View.TourView"/>
     </application>
 
 </manifest>
