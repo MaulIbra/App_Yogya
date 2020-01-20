@@ -13,10 +13,9 @@ import android.widget.TextView;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
 import com.example.yogyakarta_app.Data.Db.Entity.Tour;
-import com.example.yogyakarta_app.Features.Maps.Map;
+import com.example.yogyakarta_app.Utils.Map.Map;
 import com.example.yogyakarta_app.R;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class TourAdapter extends RecyclerView.Adapter<TourAdapter.TourHolder> {

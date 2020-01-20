@@ -7,19 +7,15 @@
     android:background="@color/white"
     tools:context=".Features.Home.View.HomeView">
 
-    <ImageView
-        android:id="@+id/image_view_home_image"
+    <com.smarteist.autoimageslider.SliderLayout
         android:layout_width="match_parent"
         android:layout_height="250dp"
-        android:background="@color/colorAccent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_alignParentTop="true"
+        android:id="@+id/imageSlider"/>
 
     <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintEnd_toStartOf="@+id/image_view_home_image"
         app:layout_constraintStart_toStartOf="parent">
 
         <LinearLayout

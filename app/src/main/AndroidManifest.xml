@@ -31,7 +31,7 @@
             android:value="@string/google_maps_key" />
 
         <activity
-            android:name=".Features.Maps.Map"
+            android:name=".Utils.Map.Map"
             android:label="@string/title_activity_map"></activity>
         <activity android:name=".MainActivity">
             <intent-filter>

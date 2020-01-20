@@ -19,7 +19,7 @@
             android:id="@+id/fragmentMain"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:name="com.example.yogyakarta_app.Features.Home.View.HomeView"/>
+            class="com.example.yogyakarta_app.Features.Home.View.HomeView"/>
 
     </FrameLayout>
 
