@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "358295861528",
+    "firebase_url": "https://yogyakarta-v2.firebaseio.com",
+    "project_id": "yogyakarta-v2",
+    "storage_bucket": "yogyakarta-v2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:358295861528:android:61a7986f917dc3be64466d",
+        "android_client_info": {
+          "package_name": "com.example.yogyakarta_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "358295861528-59q46ks6350c199pk9kaa7p73f5nqeha.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.yogyakarta_app",
+            "certificate_hash": "98edb26b1b269f4b171cf40f9b98c37e128ac328"
+          }
+        },
+        {
+          "client_id": "358295861528-ccj5j90jkna01j3m8191fbdcokosqtmv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDTakzRZ5J2SWG43SkOhjppNBz0iHAHR2k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "358295861528-ccj5j90jkna01j3m8191fbdcokosqtmv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

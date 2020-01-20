@@ -33,19 +33,22 @@
         <activity
             android:name=".Utils.Map.Map"
             android:label="@string/title_activity_map"></activity>
-        <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity android:name=".MainActivity"></activity>
         <activity android:name=".Features.Article.View.ArticleView" />
         <activity android:name=".Features.News.View.NewsView" />
         <activity android:name=".Features.News.View.NewsDetailView" />
         <activity android:name=".Features.Tour.View.TourView" />
         <activity android:name=".Features.Info.View.InfoView"/>
         <activity android:name=".Features.Info.View.InfoAddView"/>
+        <activity android:name=".Features.Auth.View.AuthLoginView"/>
+        <activity android:name=".Features.Auth.View.AuthResetPasswordView"/>
+        <activity android:name=".Splashscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
