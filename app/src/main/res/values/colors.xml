@@ -7,5 +7,12 @@
     <color name="background">#c97200</color>
     <color name="textColor">#5D5D5D</color>
     <color name="white">#ffffff</color>
+    <color name="green">#41F2A8</color>
+    <color name="silver">#d6d8d7</color>
+    <color name="colorText">#5D5D5D</color>
+    <color name="gold">#ffd700</color>
+    <color name="blue">#0000FF</color>
+    <color name="colorbackgorund">#fafafa</color>
+    <color name="backgroundmain">#f2f2f2</color>
 
 </resources>

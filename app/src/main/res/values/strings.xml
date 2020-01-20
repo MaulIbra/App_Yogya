@@ -15,4 +15,7 @@
     <string name="infos">Info</string>
     <string name="title_activity_map">Map</string>
     <string name="share">Share</string>
+    <string name="email"><font size="13">Email</font></string>
+    <string name="password"><font size="13">Password</font></string>
+    <string name="username"><font size="13">Username</font></string>
 </resources>
