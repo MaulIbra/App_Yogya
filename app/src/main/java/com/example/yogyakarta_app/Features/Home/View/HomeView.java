@@ -11,6 +11,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
+import com.example.yogyakarta_app.Features.Article.View.ArticleView;
 import com.example.yogyakarta_app.Features.Info.View.InfoView;
 import com.example.yogyakarta_app.Features.News.View.NewsView;
 import com.example.yogyakarta_app.Features.Tour.View.TourView;
@@ -23,7 +24,7 @@ import com.smarteist.autoimageslider.SliderView;
 public class HomeView extends Fragment implements View.OnClickListener {
 
     private LinearLayout mLinearLayout;
-    private LinearLayout news,eat,hotel,tour,info,article;
+    private LinearLayout news,tour,info,article;
     SliderLayout sliderLayout;
 
     public HomeView() {
@@ -39,9 +40,6 @@ public class HomeView extends Fragment implements View.OnClickListener {
         news = v.findViewById(R.id.image_view_home_news);
         news.setOnClickListener(this);
 
-        eat = v.findViewById(R.id.image_view_home_eat);
-        hotel = v.findViewById(R.id.image_view_home_hotel);
-
         tour = v.findViewById(R.id.image_view_home_tour);
         tour.setOnClickListener(this);
 
@@ -49,6 +47,7 @@ public class HomeView extends Fragment implements View.OnClickListener {
         info.setOnClickListener(this);
 
         article = v.findViewById(R.id.image_view_home_article);
+        article.setOnClickListener(this);
 
         sliderLayout = v.findViewById(R.id.imageSlider);
         sliderLayout.setIndicatorAnimation(IndicatorAnimations.FILL); //set indicator animation by using SliderLayout.Animations. :WORM or THIN_WORM or COLOR or DROP or FILL or NONE or SCALE or SCALE_DOWN or SLIDE and SWAP!!
@@ -71,6 +70,10 @@ public class HomeView extends Fragment implements View.OnClickListener {
                 break;
             case R.id.image_view_home_info:
                 startActivity(new Intent(getActivity(), InfoView.class));
+                break;
+            case R.id.image_view_home_article:
+                startActivity(new Intent(getActivity(), ArticleView.class));
+                break;
         }
     }
 

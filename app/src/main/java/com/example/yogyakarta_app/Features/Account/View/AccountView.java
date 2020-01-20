@@ -62,7 +62,7 @@ public class AccountView extends Fragment implements Auth.view {
     }
 
     @Override
-    public void showFailureMessage() {
+    public void showFailureMessage(String e) {
 
     }
 }

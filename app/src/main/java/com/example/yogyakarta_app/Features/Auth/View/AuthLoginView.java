@@ -93,8 +93,8 @@ public class AuthLoginView extends AppCompatActivity implements Auth.view, View.
     }
 
     @Override
-    public void showFailureMessage() {
-        Toast.makeText(this,"email or password is wrong",Toast.LENGTH_SHORT).show();
+    public void showFailureMessage(String e) {
+        Toast.makeText(this,e,Toast.LENGTH_SHORT).show();
     }
 
 

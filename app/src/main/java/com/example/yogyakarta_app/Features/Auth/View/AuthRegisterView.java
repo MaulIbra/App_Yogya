@@ -50,7 +50,10 @@ public class AuthRegisterView extends AppCompatActivity implements Auth.view {
                 String pass = password.getText().toString();
                 if (TextUtils.isEmpty(em) || TextUtils.isEmpty(pass)){
                     Toast.makeText(getApplicationContext(),"Please enter email and password",Toast.LENGTH_SHORT).show();
-                }else{
+                }else if (pass.length() < 7){
+                    Toast.makeText(getApplicationContext(),"Please enter password with minimum length 6",Toast.LENGTH_SHORT).show();
+                }
+                else{
                     authRegister.createUser(em,pass);
                 }
             }
@@ -67,7 +70,7 @@ public class AuthRegisterView extends AppCompatActivity implements Auth.view {
     }
 
     @Override
-    public void showFailureMessage() {
-        Toast.makeText(this,"email or password is wrong",Toast.LENGTH_SHORT).show();
+    public void showFailureMessage(String e) {
+        Toast.makeText(this,e,Toast.LENGTH_SHORT).show();
     }
 }

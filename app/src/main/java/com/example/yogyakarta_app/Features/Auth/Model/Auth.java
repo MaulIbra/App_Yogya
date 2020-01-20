@@ -5,7 +5,7 @@ public interface Auth {
 
     interface view{
         void updateUI(Boolean auth);
-        void showFailureMessage();
+        void showFailureMessage(String message);
     }
 
     interface login{

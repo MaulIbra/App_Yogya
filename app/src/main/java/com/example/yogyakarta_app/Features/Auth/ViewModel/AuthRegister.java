@@ -27,6 +27,7 @@ public class AuthRegister implements Auth.register {
                         if (task.isSuccessful()) {
                             authView.updateUI(true);
                         } else {
+                            authView.showFailureMessage("gagal mendaftar");
                             authView.updateUI(false);
                         }
                     }

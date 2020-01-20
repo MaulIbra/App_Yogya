@@ -32,7 +32,7 @@ public class AuthLogin implements Auth.login {
                         if (task.isSuccessful()){
                             authView.updateUI(true);
                         }else{
-                            authView.showFailureMessage();
+                            authView.showFailureMessage("gagal sign in");
                             authView.updateUI(false);
                         }
                     }
