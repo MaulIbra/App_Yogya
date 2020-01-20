@@ -41,6 +41,7 @@
         <activity android:name=".Features.Info.View.InfoView"/>
         <activity android:name=".Features.Info.View.InfoAddView"/>
         <activity android:name=".Features.Auth.View.AuthLoginView"/>
+        <activity android:name=".Features.Auth.View.AuthRegisterView"/>
         <activity android:name=".Features.Auth.View.AuthResetPasswordView"/>
         <activity android:name=".Splashscreen">
             <intent-filter>

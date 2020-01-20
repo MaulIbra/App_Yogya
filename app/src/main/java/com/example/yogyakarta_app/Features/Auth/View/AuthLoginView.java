@@ -61,6 +61,7 @@ public class AuthLoginView extends AppCompatActivity implements Auth.view, View.
 
         submit.setOnClickListener(this);
         google.setOnClickListener(this);
+        signup.setOnClickListener(this);
         resetPassword.setOnClickListener(this);
 
 
@@ -121,7 +122,9 @@ public class AuthLoginView extends AppCompatActivity implements Auth.view, View.
             case R.id.google:
                 signIn();
                 break;
-
+            case R.id.signup:
+                startActivity(new Intent(AuthLoginView.this,AuthRegisterView.class));
+                break;
         }
     }
 
