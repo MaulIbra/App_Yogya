@@ -44,6 +44,8 @@
         <activity android:name=".Features.News.View.NewsView" />
         <activity android:name=".Features.News.View.NewsDetailView" />
         <activity android:name=".Features.Tour.View.TourView" />
+        <activity android:name=".Features.Info.View.InfoView"/>
+        <activity android:name=".Features.Info.View.InfoAddView"/>
     </application>
 
 </manifest>

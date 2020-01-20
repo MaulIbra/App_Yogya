@@ -10,6 +10,7 @@ import android.view.MenuItem;
 
 import com.example.yogyakarta_app.Features.Account.View.AccountView;
 import com.example.yogyakarta_app.Features.Home.View.HomeView;
+import com.example.yogyakarta_app.Features.Info.View.InfoAddView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -30,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
                         menuItem.setChecked(true);
                         break;
                     case R.id.addInfo:
+                        startActivity(new Intent(MainActivity.this, InfoAddView.class));
                         menuItem.setChecked(true);
                         break;
                     case R.id.account:

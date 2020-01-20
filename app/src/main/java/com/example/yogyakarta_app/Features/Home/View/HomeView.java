@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 
+import com.example.yogyakarta_app.Features.Info.View.InfoView;
 import com.example.yogyakarta_app.Features.News.View.NewsView;
 import com.example.yogyakarta_app.Features.Tour.View.TourView;
 import com.example.yogyakarta_app.R;
@@ -38,6 +39,8 @@ public class HomeView extends Fragment implements View.OnClickListener {
         tour.setOnClickListener(this);
 
         info = v.findViewById(R.id.image_view_home_info);
+        info.setOnClickListener(this);
+
         article = v.findViewById(R.id.image_view_home_article);
 
         return v;
@@ -53,6 +56,8 @@ public class HomeView extends Fragment implements View.OnClickListener {
             case R.id.image_view_home_tour:
                 startActivity(new Intent(getActivity(), TourView.class));
                 break;
+            case R.id.image_view_home_info:
+                startActivity(new Intent(getActivity(), InfoView.class));
         }
     }
 }
